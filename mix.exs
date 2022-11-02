@@ -71,7 +71,7 @@ defmodule OpentelemetryAvalanche.MixProject do
 
   defp deps do
     [
-      {:telemetry, "~> 0.4 or ~> 1.0"},
+      {:telemetry, "~> 0.4 or ~> 1.0", override: true},
       {:opentelemetry_api, "~> 1.0"},
       {:opentelemetry_telemetry, "~> 1.0"},
       {:opentelemetry, "~> 1.0", only: [:dev, :test]},
